@@ -2,22 +2,45 @@
 layout: default
 ---
 
-<div class="home">
+<!-- orginal style from http://www.getmdl.io/templates/text-only/index.html -->
 
-  <h1 class="page-heading">Posts</h1>
+  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+    <div class="mdl-card mdl-cell mdl-cell--12-col">
+      <div class="mdl-card__supporting-text">
+          <h4><a href="{{ post.url | prepend: site.baseurl }}">Quick Intro</a></h4>
+          {{site.about_author_snippet}}
+      </div>
+      <div class="mdl-card__actions">
+        <a href="{{ "/about" | prepend: site.baseurl }}" class="mdl-button">Read a longer version</a>
+      </div>
+    </div>
+  </section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+    <div class="mdl-card mdl-cell mdl-cell--12-col">
+      <div class="mdl-card__supporting-text">
+        <h4>
+          Recent Posts
+        </h4>
+        <ul>
+          {% for post in site.posts %}
+            <li>
+              <span class="mdl-post_link">
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </span>
+              <span class="mdl-post_date">
+                {{ post.date | date: "%d %b %Y" }}
+              </span class="mdl-post_date">
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="mdl-card__actions">
+        <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="mdl-button">subscribe via RSS</a>
+      </div>
+    </div>
+  </section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <!-- Add spacer -->
+  <div class="mdl-index-page-spacer"></div>
 </div>

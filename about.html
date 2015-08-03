@@ -1,0 +1,34 @@
+---
+layout: default
+title: About
+permalink: /about/
+---
+
+<div class="mdl-jekyll-ribbon"></div>
+  <post class="mdl-jekyll-post mdl-layout__content">
+    <div class="mdl-jekyll-container mdl-grid">
+      <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+      <div class="mdl-jekyll-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+        <div class="mdl-jekyll-crumbs mdl-color-text--grey-500">
+          <a href="{{site.baseurl}}" title="Go Home">Home</a>{{ page.url | prepend: site.baseurl }}
+        </div>
+        <h3>About</h3>
+          <p class="post-meta">
+            {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+          </p>
+          <p>
+            This is a <a href="https://github.com/google/material-design-lite">Google Material Design Lite</a> Jekyll theme. The index page is based on the <a href="http://www.getmdl.io/templates/text-only/index.html" title="text-only template">text-only template</a> (<a href="https://github.com/google/material-design-lite/tree/master/templates/text-only" title="source code">source</a>). The post page (and this page) is based on the <a href="http://www.getmdl.io/templates/article/index.html" title="article template">article template</a> (<a href="https://github.com/google/material-design-lite/tree/master/templates/article" title="source code">source</a>). Some SVGs were found on <a href="https://www.iconfinder.com" title="iconfinder.com">iconfinder.com</a> <a href="https://baconipsum.com/">Bacon Lorem Ipsum</a> generator was used for generating some text.
+          </p>
+          <p>
+            You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="http://jekyllrb.com/">jekyllrb.com</a>
+          </p>
+          <p>
+            You can find the source code for the mdl-jekyll theme at: <a href="https://github.com/getaclue/mdl-jekyll.github.io">github.com/getaclue/mdl-jekyll.github.io</a>
+          </p>
+          <p>
+            You can find the source code for Jekyll at <a href="https://github.com/jekyll/jekyll">github.com/jekyll/jekyll</a>
+          </p>
+      </div>
+    </div>
+  </post>
+</div>

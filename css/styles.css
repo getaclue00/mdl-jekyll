@@ -1,0 +1,366 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+
+/*
+* CSS is a blend from the following sources, and original google material design guide:
+* https://github.com/google/material-design-lite/blob/master/templates/article/styles.css
+* https://github.com/google/material-design-lite/blob/master/templates/text-only/styles.css
+*/
+
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.mdl-jekyll .mdl-layout__header-row {
+  padding-left: 40px;
+}
+.mdl-jekyll .mdl-layout.is-small-screen .mdl-layout__header-row h3 {
+  font-size: inherit;
+}
+.mdl-jekyll .mdl-layout__tab-bar-button {
+  display: none;
+}
+.mdl-jekyll .mdl-layout.is-small-screen .mdl-layout__tab-bar .mdl-button {
+  display: none;
+}
+.mdl-jekyll .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar,
+.mdl-jekyll .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar-container {
+  overflow: visible;
+}
+.mdl-jekyll .mdl-layout__tab-bar-container {
+  height: 64px;
+}
+.mdl-jekyll .mdl-layout__tab-bar {
+  padding: 0;
+  padding-left: 16px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+.mdl-jekyll .mdl-layout__tab-bar .mdl-layout__tab {
+  height: 64px;
+  line-height: 64px;
+}
+
+.mdl-jekyll .mdl-layout__tab-bar .mdl-layout__tab_fixed {
+  height: 64px;
+  line-height: 64px;
+  float:none;
+  -webkit-box-flex:1;
+  -webkit-flex-grow:1;
+  -ms-flex-positive:1;
+  flex-grow:1;
+  padding:0;
+  margin:0;
+  border:none;
+  padding:0 24px;
+  float:left;
+  position:relative;
+  display:block;
+  -webkit-box-flex:0;
+  -webkit-flex-grow:0;
+  -ms-flex-positive:0;
+  flex-grow:0;
+  -webkit-flex-shrink:0;
+  -ms-flex-negative:0;
+  flex-shrink:0;
+  text-decoration:none;
+  text-align:center;
+  font-weight:500;
+  font-size:14px;
+  text-transform:uppercase;
+  color:rgba(255,255,255, .6);
+  overflow:hidden
+}
+
+.mdl-jekyll .mdl-layout__tab-bar .mdl-layout__tab_fixed:hover {
+  height: 64px;
+  line-height: 64px;
+  float:none;
+  -webkit-box-flex:1;
+  -webkit-flex-grow:1;
+  -ms-flex-positive:1;
+  flex-grow:1;
+  padding:0;
+  margin:0;
+  border:none;
+  padding:0 24px;
+  float:left;
+  position:relative;
+  display:block;
+  -webkit-box-flex:0;
+  -webkit-flex-grow:0;
+  -ms-flex-positive:0;
+  flex-grow:0;
+  -webkit-flex-shrink:0;
+  -ms-flex-negative:0;
+  flex-shrink:0;
+  text-decoration:none;
+  text-align:center;
+  font-weight:500;
+  font-size:14px;
+  text-transform:uppercase;
+  color:rgb(241, 196, 15);
+  overflow:hidden
+}
+
+@media screen and (max-width:1024px){.mdl-layout__tab_fixed{padding:0 12px}}
+
+.mdl-jekyll .mdl-layout__tab-bar .mdl-layout__tab.is-active::after {
+  background-color: white;
+  height: 4px;
+}
+.mdl-jekyll main > .mdl-layout__tab-panel {
+  padding: 8px;
+  padding-top: 48px;
+}
+.mdl-jekyll .mdl-card {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.mdl-jekyll .mdl-card > * {
+  height: auto;
+}
+.mdl-jekyll .mdl-card .mdl-card__supporting-text {
+  margin: 40px;
+  flex-grow: 1;
+  padding: 0;
+  color: inherit;
+  width: calc(100% - 80px);
+}
+.mdl-jekyll.mdl-jekyll .mdl-card__supporting-text h4 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.mdl-jekyll .mdl-card__actions {
+  margin: 0;
+  padding: 4px 40px;
+  color: inherit;
+}
+.mdl-jekyll .mdl-card__actions a {
+  color: #00BCD4;
+  margin: 0;
+}
+.mdl-jekyll .mdl-card__actions a:hover,
+.mdl-jekyll .mdl-card__actions a:active {
+  color: inherit;
+  background-color: transparent;
+}
+.mdl-jekyll .mdl-card__supporting-text + .mdl-card__actions {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+.mdl-jekyll #add {
+  position: absolute;
+  right: 40px;
+  top: 36px;
+  z-index: 999;
+}
+
+.mdl-jekyll .mdl-layout__content section:not(:last-of-type) {
+  position: relative;
+  margin-bottom: 48px;
+}
+.mdl-jekyll section.section--center {
+  max-width: 860px;
+}
+.mdl-jekyll #features section.section--center {
+  max-width: 620px;
+}
+.mdl-jekyll section > header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mdl-jekyll section > .section__play-btn {
+  min-height: 200px;
+}
+.mdl-jekyll section > header > .material-icons {
+  font-size: 3rem;
+}
+.mdl-jekyll section > button {
+  position: absolute;
+  z-index: 99;
+  top: 8px;
+  right: 8px;
+}
+.mdl-jekyll section .section__circle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+.mdl-jekyll section .section__text {
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding-top: 8px;
+}
+.mdl-jekyll section .section__text h5 {
+  font-size: inherit;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+.mdl-jekyll section .section__text a {
+  text-decoration: none;
+}
+.mdl-jekyll section .section__circle-container > .section__circle-container__circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  margin: 8px 0;
+}
+.mdl-jekyll section.section--footer .section__circle--big {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 8px 32px;
+}
+.mdl-jekyll .is-small-screen section.section--footer .section__circle--big {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 8px 16px;
+}
+.mdl-jekyll section.section--footer {
+  padding: 64px 0;
+  margin: 0 -8px -8px -8px;
+}
+.mdl-jekyll section.section--center .section__text:not(:last-child) {
+  border-bottom: 1px solid rgba(0,0,0,.13);
+}
+.mdl-jekyll .mdl-card .mdl-card__supporting-text > h3:first-child {
+  margin-bottom: 24px;
+}
+.mdl-jekyll .mdl-layout__tab-panel:not(#overview) {
+  background-color: white;
+}
+.mdl-jekyll #features section {
+  margin-bottom: 72px;
+}
+.mdl-jekyll #features h4, #features h5 {
+  margin-bottom: 16px;
+}
+.mdl-jekyll .toc {
+  border-left: 4px solid #C1EEF4;
+  margin: 24px;
+  padding: 0;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.mdl-jekyll .toc h4 {
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+.mdl-jekyll .toc a {
+  color: #4DD0E1;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 28px;
+  display: block;
+}
+.mdl-jekyll .mdl-menu__container {
+  z-index: 99;
+}
+.material-icons.md-16 {
+  font-size: 16px;
+}
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+ font-size: 24px;
+}
+.material-icons.md-36 {
+ font-size: 36px;
+}
+.material-icons.md-48 {
+ font-size: 48px;
+}
+
+.mdl-jekyll-ribbon {
+  width: 100%;
+  height: 30vh;
+  /*background-color: #3F51B5;*/
+  flex-shrink: 0;
+}
+
+.mdl-jekyll-post {
+  margin-top: -35vh;
+  flex-shrink: 0;
+}
+
+.mdl-jekyll-header .mdl-layout__header-row {
+  padding-left: 40px;
+}
+
+.mdl-jekyll-container {
+  max-width: 1600px;
+  width: calc(100% - 16px);
+  margin: 0 auto;
+}
+
+.mdl-jekyll-content {
+  border-radius: 2px;
+  padding: 30px 56px;
+  margin-bottom: 30px;
+}
+
+.mdl-jekyll-layout.is-small-screen .mdl-jekyll-content {
+  padding: 40px 28px;
+}
+
+.mdl-index-page-spacer{
+  width: 100%;
+  height: 10vh;
+}
+
+code {
+  word-wrap: break-word;
+  background-color: rgb(63,81,181);
+  color: rgb(255,255,255);
+}
+
+.mdl-layout_social svg {
+  fill: rgb(255,255,255);
+  vertical-align: top;
+  text-decoration: none;
+}
+
+.mdl-layout_social svg:hover {
+  fill: rgb(241, 196, 15);
+}
+
+.mdl-layout_social svg path#linked_in_bg:hover {
+  fill: rgb(241, 196, 15);
+}
+
+.mdl-layout_social a{
+  color: rgb(255,255,255);
+  text-decoration: none;
+}
+
+.mdl-layout_social a:hover{
+  color: rgb(241, 196, 15);
+  text-decoration: none;
+}
+
+.mdl-post_date{
+  float: right;
+}

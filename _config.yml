@@ -1,14 +1,24 @@
 # Site settings
 title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+email: info@awesome-site.com
+
+permalink: pretty
+
+quote: > # this means to ignore newlines until "baseurl:"
+  Bacon ipsum dolor amet meatball cupim tenderloin
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://mdl-jekyll.github.io" # the base hostname & protocol for your site
+
+about_author_snippet: >
+  Bacon ipsum dolor amet meatball cupim tenderloin frankfurter ham hock pork loin chuck kevin ham shankle capicola. Chuck prosciutto venison drumstick cow fatback picanha pig swine corned beef hamburger sirloin. Prosciutto fatback doner swine corned beef leberkas. Pancetta swine beef pastrami ground round spare ribs jerky bresaola brisket. Venison shank pork belly bresaola fatback. Sausage tenderloin tongue fatback ham hock spare ribs pork loin pork belly shoulder short loin corned beef ground round.
+
+about_author_snippet_for_posts: >
+  Bacon ipsum dolor amet meatball cupim tenderloin frankfurter ham hock pork loin chuck kevin ham shankle capicola.
+
+# Social
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  jekyllrb
+linkedin_username: jekyllrb
 
 # Build settings
 markdown: kramdown
