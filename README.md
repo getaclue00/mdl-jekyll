@@ -1,4 +1,4 @@
-# mdl-jekyll.github.io [See theme in action](https://getaclue.github.io/mdl-jekyll.github.io/)
+# mdl-jekyll.github.io [See theme in action](https://getaclue.github.io/mdl-jekyll/)
 Google's Material Design Lite (MDL) theme for [Jekyll](http://jekyllrb.com/). Download. Configure. Use. Simple. [material-design-lite v1.0.2]
 Super simple. 
 
