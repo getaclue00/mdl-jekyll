@@ -14,3 +14,5 @@ The index template is based on [text-only](http://www.getmdl.io/templates/text-o
   * [Material Design Lite](https://github.com/google/material-design-lite)
   * [Text-only MDL template](https://github.com/google/material-design-lite/tree/master/templates/text-only)
   * [Arcticle MDL template](https://github.com/google/material-design-lite/tree/master/templates/article)
+
+[![Analytics](https://ga-beacon.appspot.com/UA-65950512-1/mdl-jekyll/readme)](https://github.com/igrigorik/ga-beacon)
