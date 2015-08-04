@@ -8,8 +8,8 @@
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <!-- Material Design Lite -->
-    <link rel="stylesheet" href="{{ base.url }}/css/material.indigo-pink.min.css">
-    <link rel="stylesheet" href="{{ base.url }}/css/styles.css">
+    <link rel="stylesheet" href="{{ site.baseurl | prepend: site.url }}/css/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl | prepend: site.url }}/css/styles.css">
     <link href='//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
