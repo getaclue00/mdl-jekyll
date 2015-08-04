@@ -4,10 +4,10 @@
       <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
       <h1 class="mdl-mega-footer--heading">Navigation</h1>
       <ul class="mdl-mega-footer--link-list">
-        <li><a href="{{site.baseurl}}">Home</a></li>
+        <li><a href="{{site.baseurl | prepend: site.url}}">Home</a></li>
         {% for page in site.pages %}
           {% if page.title %}
-            <li><a href="{{ page.url | downcase | prepend: site.baseurl }}">{{ page.title }}</a></li>
+            <li><a href="{{ page.url | downcase | prepend: site.baseurl | prepend: site.url }}">{{ page.title }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>

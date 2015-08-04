@@ -33,12 +33,12 @@
       </p>
     </div>
     <div class="mdl-layout__tab-bar mdl-color--primary-dark">
-      <a class="mdl-layout__tab_fixed" href="{{ site.baseurl }}">
+      <a class="mdl-layout__tab_fixed" href="{{ site.baseurl | prepend: site.url }}">
         Home
       </a>
       {% for page in site.pages %}
         {% if page.title %}
-        <a class="mdl-layout__tab_fixed" href="{{ page.url | downcase | prepend: site.baseurl }}">{{ page.title }}</a>
+        <a class="mdl-layout__tab_fixed" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ page.title }}</a>
         {% endif %}
       {% endfor %}
     </div>

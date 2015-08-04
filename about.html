@@ -10,7 +10,7 @@ permalink: /about/
       <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
       <div class="mdl-jekyll-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
         <div class="mdl-jekyll-crumbs mdl-color-text--grey-500">
-          <a href="{{site.baseurl}}" title="Go Home">Home</a>{{ page.url | prepend: site.baseurl }}
+          <a href="{{ site.baseurl | prepend: site.url }}" title="Go Home">Home</a>{{ page.url | prepend: site.baseurl }}
         </div>
         <h3>About</h3>
           <p class="post-meta">
